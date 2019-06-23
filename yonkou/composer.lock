@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94d4bf9ac7f4a933030e46a346ee2917",
+    "content-hash": "7f91f9e7d148235862c791829185bb43",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -464,6 +464,49 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "laravel-frontend-presets/material-dashboard",
+            "version": "v1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-frontend-presets/material-dashboard.git",
+                "reference": "1cf062554883c65dcee0873e1b4950c9c33bb85f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-frontend-presets/material-dashboard/zipball/1cf062554883c65dcee0873e1b4950c9c33bb85f",
+                "reference": "1cf062554883c65dcee0873e1b4950c9c33bb85f",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^5.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelFrontendPresets\\MaterialPreset\\MaterialPresetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelFrontendPresets\\MaterialPreset\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel 5.x Front-end preset for material dashboard",
+            "homepage": "https://github.com/creativetimofficial/material-dashboard-laravel",
+            "keywords": [
+                "laravel",
+                "material",
+                "preset"
+            ],
+            "time": "2019-04-18T15:16:38+00:00"
         },
         {
             "name": "laravel/framework",
@@ -3982,6 +4025,47 @@
                 "xunit"
             ],
             "time": "2019-06-19T12:01:51+00:00"
+        },
+        {
+            "name": "pipe-dream/laravel",
+            "version": "v0.0.46",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pipe-dream/laravel.git",
+                "reference": "d60008d710375a3c9722cbd7f9c9938ffd620c75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pipe-dream/laravel/zipball/d60008d710375a3c9722cbd7f9c9938ffd620c75",
+                "reference": "d60008d710375a3c9722cbd7f9c9938ffd620c75",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "PipeDream\\Laravel\\PipeDreamServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PipeDream\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Watch how this package DESTROYS all other generators. Boilerplate repos HATE it!",
+            "keywords": [
+                "laravel",
+                "package"
+            ],
+            "time": "2019-06-13T10:42:38+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
