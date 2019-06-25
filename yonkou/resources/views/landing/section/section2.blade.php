@@ -3,15 +3,10 @@
                     <h4 class="header-text text-center">Les Plateformes</h4>
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="card card-blue">
-                                <div class="icon">
-                                    <i class="pe-7s-pen"></i>
-                                </div>
-                                <div class="text">
-                                    <h4>Client-Perfect Draws</h4>
-                                    <p>All appointments sync with your Google calendar so your availability is always up to date. See your schedule at a glance from any device.</p>
-                                </div>
-                            </div>
+
+                            @component('landing.component.siteCard')
+
+                            @endcomponent
                         </div>
                         <div class="col-md-3">
                             <div class="card card-blue">
