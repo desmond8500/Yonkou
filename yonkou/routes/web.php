@@ -2,7 +2,8 @@
 
 Route::get('/', function () {
     // return view('yonkou.pages.index');
-    return view('simple.pages.index');
+    // return view('simple.pages.index');
+    return view('landing');
 });
 Route::get('/pipedream', function () {
     return redirect('/pipe-dream');

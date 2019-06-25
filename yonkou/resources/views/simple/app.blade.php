@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="wrapper ">
-        @include('yonkou.index.sidebar')
+        {{-- @include('yonkou.index.sidebar') --}}
         <div class="main-panel">
         {{-- @include('layouts.navbars.navs.auth') --}}
         @yield('content')
