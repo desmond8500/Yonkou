@@ -4,9 +4,7 @@
                     <div class="row">
                         <div class="col-md-3">
 
-                            @component('landing.component.siteCard')
-
-                            @endcomponent
+                            
                         </div>
                         <div class="col-md-3">
                             <div class="card card-blue">

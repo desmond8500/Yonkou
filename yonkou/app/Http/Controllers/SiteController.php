@@ -12,8 +12,9 @@ class SiteController extends BaseController{
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function index()    {
-       $sites = Site::all();
+       // $sites = Site::all();
 
-        return view('simple.pages.index',compact('sites'));
+        return view('simple.pages.index');
+        // return view('simple.pages.index',compact('sites'));
     }
 }
