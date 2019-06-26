@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Yonkou'),
 
     /*
     |--------------------------------------------------------------------------
@@ -119,7 +119,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY','base64:Ff0rwW11VRLe8zdGmLTgrbi7mbNBw9I5MdQBv/7mhfo='),
+    'key' => env('APP_KEY','base64:2twDr9iqE5zfKqKXTLTw0XUbdX2xd17ws5A0Yx6qP1k='),
 
     'cipher' => 'AES-256-CBC',
 
