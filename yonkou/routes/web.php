@@ -2,6 +2,16 @@
 
 Route::get('/', 'SiteController@index');
 
+Route::get('/test', function () {
+    return view('/dashboard');
+});
+Route::get('/test1', function () {
+    return view('/welcome');
+});
+
+
+//=============================================
+
 // Route::get('/', function () {
 //     // return view('yonkou.pages.index');
 //     // return view('simple.pages.index');
@@ -50,4 +60,3 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 });
-
