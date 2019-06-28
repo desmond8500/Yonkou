@@ -6,10 +6,10 @@
         <div class="wrapper">
             @include('landing.section.section1')
             @include('landing.section.section2')
-            @include('landing.section.section3')
+            {{-- @include('landing.section.section3') --}}
 
-            @include('landing.layout.footer')
+            {{-- @include('landing.layout.footer') --}}
         </div>
     </body>
-    @include('landing.layout.scripts')
+    {{-- @include('landing.layout.scripts') --}}
 </html>
