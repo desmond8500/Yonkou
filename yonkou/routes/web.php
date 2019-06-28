@@ -1,6 +1,6 @@
 <?php
 
-Route::get('/', 'siteController@index');
+Route::get('/', 'SiteController@index');
 
 // Route::get('/', function () {
 //     // return view('yonkou.pages.index');
