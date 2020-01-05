@@ -3,6 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+// Modules
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
+// Pages
 import { NavbarComponent } from './index/navbar/navbar.component';
 import { CitationListeComponent } from './citations/citation-liste/citation-liste.component';
 import { CitationAddComponent } from './citations/citation-add/citation-add.component';
@@ -18,7 +24,8 @@ import { IndexComponent } from './index/index/index.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
