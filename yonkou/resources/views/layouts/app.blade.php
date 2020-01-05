@@ -31,6 +31,8 @@
     <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
         <span class="navbar-toggler-icon"></span>
     </button>
+    <a class="btn btn-success" href=" {{ route('io_generator_builder') }} ">GUI Generator</a>
+
 
     <ul class="nav navbar-nav ml-auto">
         <li class="nav-item d-md-down-none">
