@@ -1,19 +1,19 @@
-<!-- Citation Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('citation', 'Citation:') !!}
-    {!! Form::text('citation', null, ['class' => 'form-control']) !!}
-</div>
-
 <!-- Auteur Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('auteur', 'Auteur:') !!}
     {!! Form::text('auteur', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Traduction Field -->
+<!-- Citation Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('traduction', 'Traduction:') !!}
-    {!! Form::text('traduction', null, ['class' => 'form-control']) !!}
+    {!! Form::label('citation', 'Citation:') !!}
+    {!! Form::text('citation', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Detail Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('detail', 'Detail:') !!}
+    {!! Form::text('detail', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Type Field -->

@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// Added Modules
+import { HttpClientModule } from '@angular/common/http';
+
 // Modules
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -25,7 +28,8 @@ import { IndexComponent } from './index/index/index.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -16,24 +16,36 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  *          format="int32"
  *      ),
  *      @SWG\Property(
- *          property="citation",
- *          description="citation",
- *          type="string"
- *      ),
- *      @SWG\Property(
  *          property="auteur",
  *          description="auteur",
  *          type="string"
  *      ),
  *      @SWG\Property(
- *          property="traduction",
- *          description="traduction",
+ *          property="citation",
+ *          description="citation",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="detail",
+ *          description="detail",
  *          type="string"
  *      ),
  *      @SWG\Property(
  *          property="type",
  *          description="type",
  *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="created_at",
+ *          description="created_at",
+ *          type="string",
+ *          format="date-time"
+ *      ),
+ *      @SWG\Property(
+ *          property="updated_at",
+ *          description="updated_at",
+ *          type="string",
+ *          format="date-time"
  *      )
  * )
  */
@@ -49,9 +61,9 @@ class Citation extends Model
 
 
     public $fillable = [
-        'citation',
         'auteur',
-        'traduction',
+        'citation',
+        'detail',
         'type'
     ];
 
@@ -62,9 +74,9 @@ class Citation extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'citation' => 'string',
         'auteur' => 'string',
-        'traduction' => 'string',
+        'citation' => 'string',
+        'detail' => 'string',
         'type' => 'string'
     ];
 

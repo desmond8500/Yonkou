@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class CitationRepository
  * @package App\Repositories
- * @version January 5, 2020, 8:54 pm UTC
+ * @version January 5, 2020, 11:14 pm UTC
 */
 
 class CitationRepository extends BaseRepository
@@ -17,9 +17,9 @@ class CitationRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
-        'citation',
         'auteur',
-        'traduction',
+        'citation',
+        'detail',
         'type'
     ];
 

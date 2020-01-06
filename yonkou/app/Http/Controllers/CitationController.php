@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\DataTables\CitationDataTable;
-use App\Http\Requests;
 use App\Http\Requests\CreateCitationRequest;
 use App\Http\Requests\UpdateCitationRequest;
 use App\Repositories\CitationRepository;
-use Flash;
 use App\Http\Controllers\AppBaseController;
+use Illuminate\Http\Request;
+use Flash;
 use Response;
 
 class CitationController extends AppBaseController
@@ -24,12 +23,16 @@ class CitationController extends AppBaseController
     /**
      * Display a listing of the Citation.
      *
-     * @param CitationDataTable $citationDataTable
+     * @param Request $request
+     *
      * @return Response
      */
-    public function index(CitationDataTable $citationDataTable)
+    public function index(Request $request)
     {
-        return $citationDataTable->render('citations.index');
+        $citations = $this->citationRepository->paginate(10);
+
+        return view('citations.index')
+            ->with('citations', $citations);
     }
 
     /**
@@ -63,7 +66,7 @@ class CitationController extends AppBaseController
     /**
      * Display the specified Citation.
      *
-     * @param  int $id
+     * @param int $id
      *
      * @return Response
      */
@@ -83,7 +86,7 @@ class CitationController extends AppBaseController
     /**
      * Show the form for editing the specified Citation.
      *
-     * @param  int $id
+     * @param int $id
      *
      * @return Response
      */
@@ -103,7 +106,7 @@ class CitationController extends AppBaseController
     /**
      * Update the specified Citation in storage.
      *
-     * @param  int              $id
+     * @param int $id
      * @param UpdateCitationRequest $request
      *
      * @return Response
@@ -128,7 +131,9 @@ class CitationController extends AppBaseController
     /**
      * Remove the specified Citation from storage.
      *
-     * @param  int $id
+     * @param int $id
+     *
+     * @throws \Exception
      *
      * @return Response
      */

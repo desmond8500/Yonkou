@@ -15,10 +15,11 @@ class CreateCitationsTable extends Migration
     {
         Schema::create('citations', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('citation');
             $table->string('auteur');
-            $table->text('traduction');
+            $table->text('citation');
+            $table->text('detail');
             $table->string('type');
+            $table->timestamps();
             $table->softDeletes();
         });
     }

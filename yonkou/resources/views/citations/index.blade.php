@@ -19,6 +19,8 @@
                              @include('citations.table')
                               <div class="pull-right mr-3">
                                      
+        @include('coreui-templates::common.paginate', ['records' => $citations])
+
                               </div>
                          </div>
                      </div>
