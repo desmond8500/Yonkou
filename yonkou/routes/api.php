@@ -22,3 +22,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 // Citations
 Route::resource('citations', 'CitationAPIController');
 Route::get('quotes', 'QuotesAPIController@index');
+
+// Clients
+
+
+Route::resource('clients', 'ClientAPIController');
