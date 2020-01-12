@@ -11,6 +11,6 @@ export class CitationService {
   constructor(private http: HttpClient) { }
 
   getQuotes() {
-    return this.http.get( this.local + 'citations');
+    return this.http.get( this.local + 'quotes');
   }
 }

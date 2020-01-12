@@ -7,11 +7,14 @@ import { CitationService } from 'src/app/services/citation.service';
   styleUrls: ['./citation-liste.component.scss']
 })
 
-interface IKeys { key1: string; key2: string; }
 
 export class CitationListeComponent implements OnInit {
   public citations: any;
   public tampon: any;
+  test = {
+    auteur: 'holli',
+    citation: 'welcome home'
+  };
 
   constructor(private citation: CitationService) { }
 
@@ -23,7 +26,6 @@ export class CitationListeComponent implements OnInit {
     this.citation.getQuotes().subscribe( data => {
       this.tampon = data;
       this.citations = this.tampon.data;
-      console.log(this.citations);
     });
   }
 

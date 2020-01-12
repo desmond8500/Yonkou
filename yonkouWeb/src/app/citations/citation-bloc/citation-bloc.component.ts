@@ -8,9 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CitationBlocComponent implements OnInit {
   @Input() bloc = {
     auteur : 'Auteur',
-    citation: 'Citation',
-    detail: 'detail',
-    type: 'type'
+    citation: 'Citation'
   };
 
   constructor() { }

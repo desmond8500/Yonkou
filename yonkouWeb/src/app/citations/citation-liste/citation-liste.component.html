@@ -2,7 +2,7 @@
 
 <div class="card-columns">
   <div *ngFor="let citation of citations">
-    <app-citation-bloc bloc=[citation] ></app-citation-bloc>
+    <app-citation-bloc [bloc] = 'citation' ></app-citation-bloc>
   </div>
 </div>
 
