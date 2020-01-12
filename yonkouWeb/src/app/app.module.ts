@@ -20,6 +20,8 @@ import { CitationBlocComponent } from './citations/citation-bloc/citation-bloc.c
 import { LocClientsComponent } from './location/loc-clients/loc-clients.component';
 import { LocRecuComponent } from './location/loc-recu/loc-recu.component';
 import { LocClientComponent } from './location/loc-client/loc-client.component';
+import { LocContratComponent } from './location/loc-contrat/loc-contrat.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,12 +34,14 @@ import { LocClientComponent } from './location/loc-client/loc-client.component';
     LocClientsComponent,
     LocRecuComponent,
     LocClientComponent,
+    LocContratComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

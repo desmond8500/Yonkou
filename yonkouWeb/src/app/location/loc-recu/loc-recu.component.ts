@@ -6,8 +6,14 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./loc-recu.component.scss']
 })
 export class LocRecuComponent implements OnInit {
+  public date: Date = new Date();
+  public jour = this.date.getDate();
+  public mois = this.date.getMonth();
+  public annee = this.date.getFullYear();
+  public total = this.jour + this.mois;
+
   @Input() recu = {
-    date: 's',
+    date: this.total,
     local: '',
     prenom: '',
     nom: '',

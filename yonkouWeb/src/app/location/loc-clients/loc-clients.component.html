@@ -1,15 +1,29 @@
-
 <div class="row">
-  <div class="col-8">
-    <app-loc-recu></app-loc-recu>
+  <div class="col-12">
+    <div *ngIf='contrat.etat == true'>
+      <app-loc-contrat></app-loc-contrat>
+    </div>
+
+    <div *ngIf='recu.etat == true'>
+      <app-loc-recu [recu]='recu'></app-loc-recu>
+    </div>
   </div>
 
   <div class="col-4 d-print-none" >
     <div class="card">
       <div class="card-header">
-        <h4>Liste des clients</h4>
+        <h4>Configuration</h4>
       </div>
-      <div class="card-body">
+      <div class="card-body form-group">
+
+        <input type="date" class="form-control" [formControl]="date">
+        <select class="form-control" [formControl]="mois">
+          <option value="{{ mois }}" *ngFor='let mois of annee'>{{ mois | titlecase }}</option>
+        </select>
+        <!-- <select class="form-control">
+          <option value="" *ngFor="let client of clients">{{ client.prenom }} {{ client.nom }}</option>
+        </select> -->
+
         <table class="table">
           <thead class="thead-dark">
             <tr>
@@ -23,8 +37,8 @@
             <tr *ngFor="let client of clients">
               <th scope="row">1</th>
               <td>{{ client.prenom }} {{ client.nom }}</td>
-              <td>Reçu</td>
-              <td>Contrat</td>
+              <td><button type="button" class="btn btn-secondary" (click)='getContrat(client)'>Contrat</button></td>
+              <td><button type="button" class="btn btn-secondary" (click)='getRecu(client)'>Reçu</button></td>
             </tr>
           </tbody>
         </table>
