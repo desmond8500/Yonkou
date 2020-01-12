@@ -6,21 +6,24 @@ import { CitationService } from 'src/app/services/citation.service';
   templateUrl: './citation-liste.component.html',
   styleUrls: ['./citation-liste.component.scss']
 })
+
+interface IKeys { key1: string; key2: string; }
+
 export class CitationListeComponent implements OnInit {
   public citations: any;
-  public test = 'sdfsd';
+  public tampon: any;
 
   constructor(private citation: CitationService) { }
 
   ngOnInit() {
     this.getCitations();
-
   }
 
   getCitations() {
     this.citation.getQuotes().subscribe( data => {
-      this.citations = data;
-      console.log(data);
+      this.tampon = data;
+      this.citations = this.tampon.data;
+      console.log(this.citations);
     });
   }
 

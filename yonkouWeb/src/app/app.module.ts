@@ -16,6 +16,7 @@ import { NavbarComponent } from './index/navbar/navbar.component';
 import { CitationListeComponent } from './citations/citation-liste/citation-liste.component';
 import { CitationAddComponent } from './citations/citation-add/citation-add.component';
 import { IndexComponent } from './index/index/index.component';
+import { CitationBlocComponent } from './citations/citation-bloc/citation-bloc.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { IndexComponent } from './index/index/index.component';
     NavbarComponent,
     CitationListeComponent,
     CitationAddComponent,
-    IndexComponent
+    IndexComponent,
+    CitationBlocComponent
   ],
   imports: [
     BrowserModule,

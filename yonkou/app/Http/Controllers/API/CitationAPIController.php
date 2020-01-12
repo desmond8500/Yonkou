@@ -17,6 +17,18 @@ use Response;
 
 class CitationAPIController extends AppBaseController
 {
+    public function list(Request $request)
+    {
+        $citations = Citation::all();
+        $citations = $this->citationRepository->all(
+            $request->except(['skip', 'limit']),
+            $request->get('skip'),
+            $request->get('limit')
+        );
+
+        return $this->sendResponse($citations->toArray(), 'Citations retrieved successfully');
+    }
+
     /** @var  CitationRepository */
     private $citationRepository;
 
