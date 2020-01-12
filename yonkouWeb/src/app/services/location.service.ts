@@ -6,11 +6,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LocationService {
   private local = 'http://localhost:8000/api/';
-  private server = 'http://taabourserver.yonkou.info/api/structures';
+  private server = 'http://yonkou.yonkou.info/api/';
 
   constructor(private http: HttpClient) { }
 
   getClients() {
-    return this.http.get(this.local + 'clients');
+    // return this.http.get(this.local + 'clients');
+    return this.http.get(this.server + 'clients');
   }
 }

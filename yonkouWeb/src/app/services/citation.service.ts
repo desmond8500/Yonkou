@@ -6,11 +6,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CitationService {
   private local = 'http://localhost:8000/api/';
-  private server = 'http://taabourserver.yonkou.info/api/structures';
+  private server = 'http://yonkou.yonkou.info/api/';
 
   constructor(private http: HttpClient) { }
 
   getQuotes() {
-    return this.http.get( this.local + 'quotes');
+    // return this.http.get( this.local + 'quotes');
+    return this.http.get( this.server + 'quotes');
   }
 }
