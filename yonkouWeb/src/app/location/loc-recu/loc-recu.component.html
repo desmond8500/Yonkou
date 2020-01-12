@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-body">
+    <fieldset>
+      <div class='titre g'>QUITTANCE DE LOYER</div>
+      <div class='entete'>
+        Momar DIAGNE <br>
+        Tel: 77 647 27 35 <br>
+        Cité Hilal, Km 8 BCCD <br>
+      </div> <br>
+
+      <div class="date">
+        <b>Date:</b> {{ recu.date }} <br>
+        <b>Logement: </b> {{ recu.local }} <br>
+      </div>
+
+      <div class="bod">
+        Reçu de M. <b>{{  recu.prenom}} {{ recu.nom }}</b>,
+        la somme de <b>{{ recu.prix }} Francs </b>
+        au titre du paiement du loyer du logement sis au 180, cité Hilal, Km 8 Boulecard
+        de la commune de Dakar. <br><br>
+
+        <div>
+          <span class="w">Période du :</span> <b>01-{{ recu.mois }} au 30-{{ recu.mois }} 2019</b>
+        </div>
+
+        <div>
+          <span class="w">Date de règlement: </span> <b>{{ recu.date }} </b>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+</div>
+

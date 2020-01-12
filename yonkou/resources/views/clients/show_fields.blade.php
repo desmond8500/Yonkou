@@ -28,6 +28,12 @@
     <p>{{ $client->local }}</p>
 </div>
 
+<!-- Prix Field -->
+<div class="form-group">
+    {!! Form::label('prix', 'Prix:') !!}
+    <p>{{ $client->prix }}</p>
+</div>
+
 <!-- Ci Field -->
 <div class="form-group">
     {!! Form::label('ci', 'Ci:') !!}
@@ -44,12 +50,6 @@
 <div class="form-group">
     {!! Form::label('tel', 'Tel:') !!}
     <p>{{ $client->tel }}</p>
-</div>
-
-<!-- Prix Field -->
-<div class="form-group">
-    {!! Form::label('prix', 'Prix:') !!}
-    <p>{{ $client->prix }}</p>
 </div>
 
 <!-- Caution Field -->

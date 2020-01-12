@@ -5,6 +5,8 @@
         <span>Citations</span>
     </a>
 </li>
+
+
 <li class="nav-item {{ Request::is('clients*') ? 'active' : '' }}">
     <a class="nav-link" href="{{ route('clients.index') }}">
         <i class="nav-icon icon-cursor"></i>

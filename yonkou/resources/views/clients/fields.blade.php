@@ -22,6 +22,12 @@
     {!! Form::text('local', null, ['class' => 'form-control']) !!}
 </div>
 
+<!-- Prix Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('prix', 'Prix:') !!}
+    {!! Form::text('prix', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Ci Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('ci', 'Ci:') !!}
@@ -38,12 +44,6 @@
 <div class="form-group col-sm-6">
     {!! Form::label('tel', 'Tel:') !!}
     {!! Form::text('tel', null, ['class' => 'form-control']) !!}
-</div>
-
-<!-- Prix Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('prix', 'Prix:') !!}
-    {!! Form::text('prix', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Caution Field -->

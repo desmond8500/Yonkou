@@ -8,18 +8,18 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class Client
  * @package App\Models
- * @version January 12, 2020, 2:01 pm UTC
+ * @version January 12, 2020, 2:36 pm UTC
  *
  * @property string titre
  * @property string prenom
  * @property string nom
  * @property string local
- * @property integer ci
- * @property integer delivre
- * @property integer tel
- * @property integer prix
- * @property integer caution
- * @property integer contrat
+ * @property string prix
+ * @property string ci
+ * @property string delivre
+ * @property string tel
+ * @property string caution
+ * @property string contrat
  */
 class Client extends Model
 {
@@ -37,10 +37,10 @@ class Client extends Model
         'prenom',
         'nom',
         'local',
+        'prix',
         'ci',
         'delivre',
         'tel',
-        'prix',
         'caution',
         'contrat'
     ];
@@ -56,12 +56,12 @@ class Client extends Model
         'prenom' => 'string',
         'nom' => 'string',
         'local' => 'string',
-        'ci' => 'integer',
-        'delivre' => 'integer',
-        'tel' => 'integer',
-        'prix' => 'integer',
-        'caution' => 'integer',
-        'contrat' => 'integer'
+        'prix' => 'string',
+        'ci' => 'string',
+        'delivre' => 'string',
+        'tel' => 'string',
+        'caution' => 'string',
+        'contrat' => 'string'
     ];
 
     /**

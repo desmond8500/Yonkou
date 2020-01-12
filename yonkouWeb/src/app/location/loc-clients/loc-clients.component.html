@@ -1,0 +1,38 @@
+
+<div class="row">
+  <div class="col-8">
+    <app-loc-recu></app-loc-recu>
+  </div>
+
+  <div class="col-4 d-print-none" >
+    <div class="card">
+      <div class="card-header">
+        <h4>Liste des clients</h4>
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nom</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let client of clients">
+              <th scope="row">1</th>
+              <td>{{ client.prenom }} {{ client.nom }}</td>
+              <td>Reçu</td>
+              <td>Contrat</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+

@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\DataTables\ClientDataTable;
-use App\Http\Requests;
 use App\Http\Requests\CreateClientRequest;
 use App\Http\Requests\UpdateClientRequest;
 use App\Repositories\ClientRepository;
-use Flash;
 use App\Http\Controllers\AppBaseController;
+use Illuminate\Http\Request;
+use Flash;
 use Response;
 
 class ClientController extends AppBaseController
@@ -24,12 +23,16 @@ class ClientController extends AppBaseController
     /**
      * Display a listing of the Client.
      *
-     * @param ClientDataTable $clientDataTable
+     * @param Request $request
+     *
      * @return Response
      */
-    public function index(ClientDataTable $clientDataTable)
+    public function index(Request $request)
     {
-        return $clientDataTable->render('clients.index');
+        $clients = $this->clientRepository->paginate(10);
+
+        return view('clients.index')
+            ->with('clients', $clients);
     }
 
     /**
@@ -63,7 +66,7 @@ class ClientController extends AppBaseController
     /**
      * Display the specified Client.
      *
-     * @param  int $id
+     * @param int $id
      *
      * @return Response
      */
@@ -83,7 +86,7 @@ class ClientController extends AppBaseController
     /**
      * Show the form for editing the specified Client.
      *
-     * @param  int $id
+     * @param int $id
      *
      * @return Response
      */
@@ -103,7 +106,7 @@ class ClientController extends AppBaseController
     /**
      * Update the specified Client in storage.
      *
-     * @param  int              $id
+     * @param int $id
      * @param UpdateClientRequest $request
      *
      * @return Response
@@ -128,7 +131,9 @@ class ClientController extends AppBaseController
     /**
      * Remove the specified Client from storage.
      *
-     * @param  int $id
+     * @param int $id
+     *
+     * @throws \Exception
      *
      * @return Response
      */

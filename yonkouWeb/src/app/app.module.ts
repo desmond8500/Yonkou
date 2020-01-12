@@ -17,6 +17,9 @@ import { CitationListeComponent } from './citations/citation-liste/citation-list
 import { CitationAddComponent } from './citations/citation-add/citation-add.component';
 import { IndexComponent } from './index/index/index.component';
 import { CitationBlocComponent } from './citations/citation-bloc/citation-bloc.component';
+import { LocClientsComponent } from './location/loc-clients/loc-clients.component';
+import { LocRecuComponent } from './location/loc-recu/loc-recu.component';
+import { LocClientComponent } from './location/loc-client/loc-client.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { CitationBlocComponent } from './citations/citation-bloc/citation-bloc.c
     CitationListeComponent,
     CitationAddComponent,
     IndexComponent,
-    CitationBlocComponent
+    CitationBlocComponent,
+    LocClientsComponent,
+    LocRecuComponent,
+    LocClientComponent,
   ],
   imports: [
     BrowserModule,

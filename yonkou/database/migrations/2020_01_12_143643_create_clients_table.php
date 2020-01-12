@@ -19,12 +19,12 @@ class CreateClientsTable extends Migration
             $table->string('prenom');
             $table->string('nom');
             $table->string('local');
-            $table->increments('ci');
-            $table->increments('delivre');
-            $table->increments('tel');
-            $table->increments('prix');
-            $table->increments('caution');
-            $table->increments('contrat');
+            $table->string('prix');
+            $table->string('ci');
+            $table->string('delivre');
+            $table->string('tel');
+            $table->string('caution');
+            $table->string('contrat');
             $table->timestamps();
             $table->softDeletes();
         });

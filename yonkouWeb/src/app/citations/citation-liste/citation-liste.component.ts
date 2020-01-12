@@ -11,10 +11,6 @@ import { CitationService } from 'src/app/services/citation.service';
 export class CitationListeComponent implements OnInit {
   public citations: any;
   public tampon: any;
-  test = {
-    auteur: 'holli',
-    citation: 'welcome home'
-  };
 
   constructor(private citation: CitationService) { }
 
