@@ -25,8 +25,4 @@ Route::get('quotes', 'QuotesAPIController@index');
 
 // Clients
 
-
-
-
-
 Route::resource('clients', 'ClientAPIController');

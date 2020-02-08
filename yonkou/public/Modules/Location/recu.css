@@ -1,0 +1,56 @@
+
+fieldset{
+    /*border: 1px solid blue;*/
+    background: white;
+    padding: 10px;
+    height: 280px;
+    font-size: 20px;
+    display: block;
+    height: 370px;
+  }
+
+  .titre{
+    width: 350px;
+    margin: auto;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .entete{
+    font-weight: bold;
+  }
+
+  .date{
+    position: relative;
+    font-weight: bold;
+    text-align: right;
+    top: -125px;
+  }
+
+  .g{
+    font-weight: bold;
+  }
+
+  .periode{
+    font-weight: bold;
+  }
+
+  .bod{
+    position: relative;
+    top: -50px;
+  }
+
+  .ligne{
+    display: block;
+    position: relative;
+    top: 100px;
+    border-top: 1px solid black;
+  }
+
+.w{
+  width: 200px;
+  display: block;
+  float: left;
+}
